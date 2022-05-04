@@ -22,6 +22,12 @@ public class Main {
             Map<String,Object> model = new HashMap<>();
             return new ModelAndView(model,"add-hero.hbs");
         }, new HandlebarsTemplateEngine());
+        get("/hero/all",(request,response) -> {
+            Map<String, Object> model = new HashMap<>();
+            ArrayList<Hero> heroes = Hero.getAll();
+            model.put("heroes",heroes);
+            return new ModelAndView(model,"hero-all.hbs");
+        }, new HandlebarsTemplateEngine());
         post("/hero/new",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
             String heroName = request.queryParams("heroName");
