@@ -1,17 +1,31 @@
 package chachaup;
 
+import java.util.ArrayList;
+
 public class Hero {
     private String heroName;
     private int heroAge;
     private String heroPower;
     private String heroWeakness;
     private Squad heroSquad;
+    private static ArrayList<Hero> instances = new ArrayList<>();
+    private int id;
 
     public Hero(String heroName, int heroAge, String heroPower, String heroWeakness){
         this.heroAge = heroAge;
         this.heroName = heroName;
         this.heroPower = heroPower;
         this.heroWeakness = heroWeakness;
+        instances.add(this);
+        this.id = instances.size();
+    }
+
+    public static ArrayList<Hero> getAll() {
+        return instances;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public Squad getHeroSquad() {
