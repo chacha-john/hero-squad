@@ -1,8 +1,10 @@
 {{#partial "content"}}
     {{#if heroes}}
+        Your heroes are,
         {{#each heroes}}
-            {{heroes.name}}
+            <h3><span>{{heroName}}</span></h3>
         {{/each}}
+        <p><a href="/hero/all">See more details...</a></p>
     {{else}}
         <p>You don't have heroes yet!</p>
     {{/if}}
