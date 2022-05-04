@@ -1,0 +1,15 @@
+{{#partial "content"}}
+    <form action="/hero/new" method="post">
+        <label for="heroName">Enter hero name</label>
+        <input name="heroName" id="heroName" type="text">
+        <label for="heroAge">Enter hero's age</label>
+        <input name="heroAge" id="heroAge" type="text">
+        <label for="heroPower">Enter the hero's superpower</label>
+        <input name="heroPower" id="heroPower" type="text">
+        <label for="heroWeakness">Enter the hero's superpower</label>
+        <input name="heroWeakness" id="heroWeakness" type="text">
+        <button type="submit">Add Hero</button>
+    </form>
+{{/partial}}
+
+{{> layout.hbs}}

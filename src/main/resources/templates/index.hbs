@@ -1,5 +1,11 @@
 {{#partial "content"}}
-    <p>This is the home page!</p>
+    {{#if heroes}}
+        {{#each heroes}}
+            {{heroes.name}}
+        {{/each}}
+    {{else}}
+        <p>You don't have heroes yet!</p>
+    {{/if}}
 {{/partial}}
 
 {{> layout.hbs}}
