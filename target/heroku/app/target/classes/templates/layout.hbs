@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+<head>
+    <title>{{#block "title"}}r!ko heroes{{/block}}</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+{{#block "body"}}
+<nav>
+    <ul>
+        <li><a href="/">Home of Heroes</a> </li>
+        <li><a href="/hero/form">Add your favorite hero!</a></li>
+        <li><a href="/hero/all">See all heroes</a> </li>
+        <li><a href="/squad/form">Add a custom hero squad</a></li>
+        <li><a href="/squad/all">Show all squads</a> </li>
+    </ul>
+</nav>
+<h3 class="flier">r!ko's Home of Heroes!</h3>
+<section id="banner">
+    {{#block "content"}}
+
+    {{/block}}
+</section>
+<section id="action">
+    {{#block "action"}}
+
+    {{/block}}
+</section>
+{{#block "footer"}}
+
+{{/block}}
+{{/block}}
+</body>
+
+</html>

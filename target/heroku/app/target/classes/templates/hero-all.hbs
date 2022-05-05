@@ -1,0 +1,13 @@
+{{#partial "content"}}
+    {{#if heroes}}
+        {{#each heroes}}
+            <h2>{{id}}. {{heroName}}</h2>
+            <p>{{heroName}}'s superpower is {{heroPower}}!</p>
+            <p>Their weakness on the other hand is {{heroWeakness}}</p>
+        {{/each}}
+    {{else}}
+        <p>You don't have heroes yet!</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}

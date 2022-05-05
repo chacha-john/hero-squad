@@ -1,0 +1,13 @@
+{{#partial "content"}}
+    {{#if squads}}
+        {{#each squads}}
+            <h2>{{id}}. {{squadName}}</h2>
+            <p>{{squadName}}'s cause is {{squadCause}}!</p>
+            <p>Its maximum size is {{squadMaxSize}}</p>
+        {{/each}}
+    {{else}}
+        <p>You don't have hero squads yet!</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}
