@@ -1,21 +1,21 @@
-{{#partial "content"}}
-    {{#if heroes}}
-        Your heroes are,
-        {{#each heroes}}
-            <h3><span>{{heroName}}</span></h3>
-        {{/each}}
-        <p><a href="/hero/all">See more details...</a></p>
-    {{else}}
-        <p>You don't have heroes yet!</p>
-    {{/if}}
-    {{#if squads}}
-        {{#each squads}}
-            {{squadName}}
-        {{/each}}
-    {{else}}
-        <p>You do not have any squad.</p>
-    {{/if}}
+        {{#partial "content"}}
+            {{#if heroes}}
+                Your heroes are,
+                {{#each heroes}}
+                    <h3><span>{{heroName}}</span></h3>
+                {{/each}}
+                <p><a href="/hero/all">See more details...</a></p>
+            {{else}}
+                <p>You don't have heroes yet!</p>
+            {{/if}}
+            {{#if squads}}
+                {{#each squads}}
+                    {{squadName}}
+                {{/each}}
+            {{else}}
+                <p>You do not have any squad.</p>
+            {{/if}}
 
-{{/partial}}
+        {{/partial}}
 
 {{> layout.hbs}}

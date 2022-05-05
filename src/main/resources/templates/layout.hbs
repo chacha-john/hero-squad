@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+    <html>
 <head>
     <title>{{#block "title"}}r!ko heroes{{/block}}</title>
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<h3>Welcome to r!ko's Home of Heroes!</h3>
+{{#block "body"}}
 <nav>
     <ul>
         <li><a href="/">Home of Heroes</a> </li>
@@ -15,6 +15,7 @@
         <li><a href="/squad/all">Show all squads</a> </li>
     </ul>
 </nav>
+<h3 class="flier">r!ko's Home of Heroes!</h3>
 <section id="banner">
     {{#block "content"}}
 
@@ -28,5 +29,7 @@
 {{#block "footer"}}
 
 {{/block}}
+{{/block}}
 </body>
+
 </html>
