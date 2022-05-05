@@ -12,9 +12,16 @@ import java.util.Map;
 import static spark.Spark.*;
 
 public class Main {
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567;
+    }
     public static void main(String[] args) {
+        port(getHerokuAssignedPort());
         staticFileLocation("/public");
-
 
         get("/",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
@@ -22,9 +29,8 @@ public class Main {
             ArrayList<Squad> squads = Squad.getAll();
             model.put("heroes",heroes);
             model.put("squads",squads);
-            return new ModelAndView(model,"index.hbs");
-        }, new HandlebarsTemplateEngine());
-
+            return new ModelAndView(model, "index.hbs");
+        },new HandlebarsTemplateEngine());
 
         get("/hero/form",(request,response) -> {
             Map<String,Object> model = new HashMap<>();
