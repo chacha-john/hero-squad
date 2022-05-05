@@ -1,3 +1,69 @@
 body{
-background-color: teal;
+background-color: #307375;
+color: #163436;
+//background-image: url("/assets/banner.jpg");
+//background-size: cover;
+font-size: 150%;
+}
+
+ul{
+display: flex;
+list-style-type: none;
+
+}
+
+form{
+width: 80%;
+border-radius: 10px;
+box-shadow: 5px 5px 5px black;
+position: relative;
+left: 10%;
+padding: 5%;
+padding-right: 0;
+}
+
+label, button{
+display: block;
+font-size: 110%;
+}
+
+button{
+border-radius: 5px;
+padding: .5%;
+background-color: #4FBEC2;
+}
+
+input{
+width: 80%;
+height: 30px;
+border-radius: 5px;
+margin-bottom: 2%;
+}
+
+
+nav ul li{
+color: black;
+justify-content: space-around;
+font-size: x-large;
+font-weight: bold;
+margin: 2%;
+}
+
+a{
+text-decoration: none;
+color: #163436;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+.flier{
+text-align: center;
+}
+
+#banner{
+width: 70%;
+position: relative;
+left: 15%;
 }
