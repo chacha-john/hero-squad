@@ -44,6 +44,9 @@
 
 [Go Back to the top](#hero-squad)
 
+# Live Link
+[Live link](https://riko-heroes.herokuapp.com/)
+
 # Authors Info
 
 Linkedin - [Chacha John](https://www.linkedin.com/in/rikonnect/)
