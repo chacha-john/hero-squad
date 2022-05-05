@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>hero-nic</artifactId>
+    <groupId>chachaup</groupId>
+    <artifactId>heroes</artifactId>
     <version>1.0</version>
 
     <dependencies>
@@ -65,7 +65,7 @@
                     <archive>
                         <!-- Change this to YOUR main class name if different. Usually, it will be App. -->
                         <manifest>
-                            <mainClass>App</mainClass>
+                            <mainClass>chachaup.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -77,9 +77,9 @@
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
                     <!-- Change this to YOUR application name! -->
-                    <appName>hero-nic</appName>
+                    <appName>riko-heroes</appName>
                     <processTypes>
-                        <web>java -jar target/hero-nic-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/heroes-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
