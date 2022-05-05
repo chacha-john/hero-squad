@@ -1,4 +1,4 @@
-package chachaup;
+package chachaup.service;
 
 import java.util.ArrayList;
 

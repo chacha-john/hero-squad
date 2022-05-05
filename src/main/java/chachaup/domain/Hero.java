@@ -1,4 +1,4 @@
-package chachaup;
+package chachaup.domain;
 
 import java.util.ArrayList;
 

@@ -8,6 +8,14 @@
     {{else}}
         <p>You don't have heroes yet!</p>
     {{/if}}
+    {{#if squads}}
+        {{#each squads}}
+            {{squadName}}
+        {{/each}}
+    {{else}}
+        <p>You do not have any squad.</p>
+    {{/if}}
+
 {{/partial}}
 
 {{> layout.hbs}}

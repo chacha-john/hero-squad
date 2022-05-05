@@ -1,0 +1,13 @@
+{{#partial "content"}}
+    <form action="/squad/new" method="post">
+        <label for="squadName">Enter Squad name</label>
+        <input name="squadName" id="squadName" type="text" required>
+        <label for="squadMaxSize">Enter squad's maximum size</label>
+        <input name="squadMaxSize" id="squadMaxSize" type="number" required>
+        <label for="squadCause">Enter the squad's cause</label>
+        <input name="squadCause" id="squadCause" type="text" required>
+        <button type="submit">Add Squad</button>
+    </form>
+{{/partial}}
+
+{{> layout.hbs}}
